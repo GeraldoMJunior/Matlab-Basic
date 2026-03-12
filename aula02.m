@@ -1,0 +1,20 @@
+l = 3;
+b = 2;
+h = sqrt(l^2 - (b/2)^2);
+x = [-1, 1, 0, -1];
+y = [0, 0, h, 0];
+
+figure;
+plot(x, y, 'r-', 'LineWidth', 2);
+hold on;
+fill(x, y, 'r', 'FaceAlpha', 0.3);
+xlim([-5 5]);
+ylim([-5 5]);
+axis equal;
+xlim([-5 5]);
+ylim([-5 5]);
+grid on;
+title('Triângulo Isósceles (Lados = 3, Base = 2)');
+xlabel('Eixo X (cm)');
+ylabel('Eixo Y (cm)');
+hold off;
