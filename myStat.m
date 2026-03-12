@@ -12,8 +12,13 @@ function r = myStat(v, nome)
         p = t/2;
         r = (va(p) + va(p+1))/2;
       end
+    case 'moda'
+      [q, n] = groupcounts(v');
+      p = find(q == max(q));
+      r = n(p);
     otherwise
       disp('Função não implementada.');
       r = 0;
   end
+
 end
